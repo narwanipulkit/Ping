@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:src="@mipmap/ic_ping"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/imageView2"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:errorEnabled="true"
+        >
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:id="@+id/uname"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+           />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        app:errorEnabled="true">
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="#ffffff"
+            android:textColor="#ffffff"
+            android:id="@+id/pass"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.v7.widget.AppCompatButton
+        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:text="Login"
+        android:textSize="15dp"
+        android:id="@+id/login"
+        android:textAlignment="center"
+
+        android:textColor="#ffffff"
+        android:layout_gravity="center_horizontal"
+        android:backgroundTint="#D32F2F"
+        android:elevation="8dp"
+        />
+    <android.support.v7.widget.AppCompatTextView
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"
+        android:id="@+id/newu"
+        android:text="New User?Click Here">
+
+    </android.support.v7.widget.AppCompatTextView>
+</LinearLayout>
